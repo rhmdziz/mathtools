@@ -4,16 +4,21 @@ while True:
     a = int(input("a: "))
     b = int(input("b: "))
     c = int(input("c: "))
-    return bagi, a, b, c
+    b = b - (a*bagi)
+    x = c - (b*bagi)
+    return bagi, x
   def derajat4():
     d = int(input("d: "))
-    return d
+    x = d - (x*bagi)
+    return x
   def derajat5():
     e = int(input("e: "))
-    return e
+    x = e - (x*bagi)
+    return x
   def derajat6():
     f = int(input("f: "))
-    return f
+    x = f - (x*bagi)
+    return x
   input_derajat = int(input("Berapa derajat(3--6): "))
   if input_derajat == 3:
     derajat3()
@@ -31,8 +36,5 @@ while True:
     derajat6()
   else:
     print("error")
-  b = b - (a*bagi)
-  c = c - (b*bagi)
-
   #  dah nanti aja
   print(x)
