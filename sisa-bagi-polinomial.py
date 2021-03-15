@@ -1,40 +1,35 @@
 while True:
-  def derajat3():
-    bagi = int(input("bagi: ")
+  def operasi():
+    bagi = int(input("bagi: "))
     a = int(input("a: "))
     b = int(input("b: "))
     c = int(input("c: "))
-    b = b - (a*bagi)
-    x = c - (b*bagi)
-    return bagi, x
-  def derajat4():
     d = int(input("d: "))
-    x = d - (x*bagi)
-    return x
-  def derajat5():
-    e = int(input("e: "))
-    x = e - (x*bagi)
-    return x
-  def derajat6():
-    f = int(input("f: "))
-    x = f - (x*bagi)
-    return x
+    b = b - (a*bagi)
+    c = c - (b*bagi)
+    d = d - (c*bagi)
+    if input_derajat == 3:
+        print('sisa bagi:',d,'\n')
+    elif input_derajat == 4:
+        e = int(input("e: "))
+        e = e - (d*bagi)
+        print('sisa bagi',e, '\n')
+    elif input_derajat == 5:
+        e = int(input('e: '))
+        e = e - (d*bagi)
+        f = int(input('f: '))
+        f = f - (e*bagi)
+        print('sisa bagi:',f,'\n')
+    elif input_derajat == 6:
+        e = int(input('e: '))
+        e = e - (d*bagi)
+        f = int(input('f: '))
+        f = f - (e*bagi)
+        g = int(input('g: '))
+        g = g - (f*bagi)
+        print('sisa bagi:',g,'\n')
   input_derajat = int(input("Berapa derajat(3--6): "))
-  if input_derajat == 3:
-    derajat3()
-  elif input_derajat == 4:
-    derajat3()
-    derajat4()
-  elif input_derajat == 5:
-    derajat3()
-    derajat4()
-    derajat5()
-  elif input_derajat == 6:
-    derajat3()
-    derajat4()
-    derajat5()
-    derajat6()
+  if input_derajat == 3 or input_derajat == 4 or input_derajat == 5 or input_derajat == 6:
+    operasi()
   else:
-    print("error")
-  #  dah nanti aja
-  print(x)
+    print("error\n")
