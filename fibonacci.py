@@ -1,8 +1,9 @@
 while True:
   a = int(input('a: '))
   b = int(input('u2: '))
-  print(a,b,+'endln=' ')
-  for i in range(10):
+  d = int(input('un: '))
+  for i in range(d+1)
+    print(a, b, end=' ')
     c = a + b
     a, b = b, c
-    print(c)
+    print(c, end=' ')
